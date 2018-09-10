@@ -49,3 +49,7 @@ def magicSquare(n):
 magicSquare(3)
 
 # Solution
+# 2 7 6
+# 9 5 1
+# 4 3 8
+# The sum of each row/column/diagonal is: 15.0
