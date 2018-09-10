@@ -55,3 +55,19 @@ if(ch == sameSymbol):
     print("Right")
 else:
     print("Wrong")
+
+
+# Solution
+# 3
+# 1
+# ['u', 'K', 'p', 'J', 'v']
+# ['z', 'J', 'k', 'j', 'o']
+# Spot the similar symbol: v
+# Wrong
+
+# 3
+# 2
+# ['V', 'q', 'c', 'L', 'e']
+# ['R', 'p', 'L', 'u', 'x']
+# Spot the similar symbol: L
+# Right
