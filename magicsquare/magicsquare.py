@@ -45,8 +45,8 @@ def magicSquare(n):
     
     print("The sum of each row/column/diagonal is: "+str(n*(n**2 + 1)/2))
 
-
-magicSquare(3)
+size = int(input("Enter the matrix size(3*3 i.e. N = 3) N = "))
+magicSquare(size)
 
 # Solution
 # 2 7 6
