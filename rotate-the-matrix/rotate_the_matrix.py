@@ -73,3 +73,13 @@ def printMatrix(mat):
                 print(i, end=' ')
             temp += 1
         print()
+
+# Form matrix
+
+
+def formMatrix(n):
+    m = []
+    for i in range(n):
+        l = list(map(int, input().split(' ')))
+        m.append(l)
+    return m
