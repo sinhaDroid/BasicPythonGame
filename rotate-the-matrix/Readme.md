@@ -47,6 +47,6 @@ Output:
 13 11 7 8
 14 15 16 12
 
-Explanation: 
+Explanation:
 In the first example, there is an odd number of rows and columns hence excluding the middle element i.e. 5 all the elements were shifted by one position in a clockwise manner.
 In the second example, there are even number of rows and columns hence all the elements were shifted by one position in a clockwise manner
