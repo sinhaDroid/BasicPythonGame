@@ -83,3 +83,10 @@ def formMatrix(n):
         l = list(map(int, input().split(' ')))
         m.append(l)
     return m
+
+
+n = int(input())
+matrix = formMatrix(n)
+matrix = rotateMatrix(matrix)
+# Print modified matrix
+printMatrix(matrix)
