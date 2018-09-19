@@ -1,4 +1,6 @@
 # Function to rotate a matrix
+
+
 def rotateMatrix(mat):
 
     if not len(mat):
@@ -57,3 +59,17 @@ def rotateMatrix(mat):
         left += 1
 
     return mat
+
+# Utility Function
+
+
+def printMatrix(mat):
+    for row in mat:
+        temp = 1
+        for i in row:
+            if temp == len(row):
+                print(i, end='')
+            else:
+                print(i, end=' ')
+            temp += 1
+        print()
