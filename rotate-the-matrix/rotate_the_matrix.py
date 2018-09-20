@@ -1,6 +1,4 @@
 # Function to rotate a matrix
-
-
 def rotateMatrix(mat):
 
     if not len(mat):
@@ -63,30 +61,26 @@ def rotateMatrix(mat):
 # Utility Function
 
 
-def printMatrix(mat):
-    for row in mat:
-        temp = 1
-        for i in row:
-            if temp == len(row):
-                print(i, end='')
-            else:
-                print(i, end=' ')
-            temp += 1
-        print()
-
-# Form matrix
-
-
-def formMatrix(n):
-    m = []
+def printMatrix(mat, n):
     for i in range(n):
-        l = list(map(int, input().split(' ')))
-        m.append(l)
-    return m
+        for j in range(n):
+            if(j == n-1):
+                print(mat[i][j], end="")
+            else:
+                print(mat[i][j], end=" ")
+
+        if(i != n-1):
+            print()
 
 
 n = int(input())
-matrix = formMatrix(n)
+
+# Form a matrix
+matrix = []
+for i in range(1, n+1):
+    l = list(map(int, input().split()))
+    matrix.append(l)
+
 matrix = rotateMatrix(matrix)
 # Print modified matrix
-printMatrix(matrix)
+printMatrix(matrix, n)
