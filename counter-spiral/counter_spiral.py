@@ -1,4 +1,8 @@
-def counterClockspiralPrint(arr):
+# Function to print
+# the required traversal
+
+
+def counterClockspiralPrint(m, n, arr):
     k = 0
     l = 0
 
@@ -13,8 +17,6 @@ def counterClockspiralPrint(arr):
 
     # total number of
     # elements in matrix
-    m = len(arr)
-    n = len(arr)
     total = m * n
 
     while (k < m and l < n):
@@ -63,17 +65,15 @@ def counterClockspiralPrint(arr):
 
             k += 1
 
-# Form matrix
 
+# Driver Code
+num = int(input())
+R = num
+C = num
 
-def formMatrix(n):
-    temp = []
-    for i in range(n):
-        l = list(map(int, input().split(' ')))
-        temp.append(l)
-    return temp
+arr = []
+for i in range(1, num+1):
+    l = list(map(int, input().split()))
+    arr.append(l)
 
-
-n = int(input())
-matrix = formMatrix(n)
-counterClockspiralPrint(matrix)
+counterClockspiralPrint(R, C, arr)
