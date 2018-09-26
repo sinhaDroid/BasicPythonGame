@@ -25,7 +25,6 @@ def survival(S, N, M):
 
 
 # Driver code
-S = 18
-N = 17
-M = 12
+val = list(map(int, input("Enter the S, N and M with spaces in between: ").split(" ")))
+S, N, M = val[0], val[1], val[2]
 survival(S, N, M)
