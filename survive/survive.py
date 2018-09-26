@@ -16,7 +16,7 @@ def survival(S, N, M):
         # If we can survive then we can
         # buy ceil(A / N) times where A is
         # total units of food required.
-        days = (M * S) / N
+        days = int((M * S) / N)
 
         if (((M * S) % N) != 0):
             days += 1
@@ -25,7 +25,7 @@ def survival(S, N, M):
 
 
 # Driver code
-S = 10
-N = 16
-M = 2
+S = 18
+N = 17
+M = 12
 survival(S, N, M)
