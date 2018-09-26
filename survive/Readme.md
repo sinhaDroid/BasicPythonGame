@@ -22,7 +22,6 @@ Input:
 Output:
 2
 
-
 Example-2
 
 Input:
@@ -31,6 +30,6 @@ Input:
 Output:
 NO
 
-Explanation 1: One possible solution is to buy a box on the first day (Monday), it’s sufficient to eat from this box up to 8th day (Monday) inclusive. Now, on the 9th day (Tuesday), you buy another box to survive the 9th and 10th day.
+**Explanation 1**: One possible solution is to buy a box on the first day (Monday), it’s sufficient to eat from this box up to 8th day (Monday) inclusive. Now, on the 9th day (Tuesday), you buy another box to survive the 9th and 10th day.
 
-Explanation 2: You can’t survive even if you buy food because the maximum number of units you can buy in one day is less the required food for one day.
+**Explanation 2**: You can’t survive even if you buy food because the maximum number of units you can buy in one day is less the required food for one day.
