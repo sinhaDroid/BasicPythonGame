@@ -4,7 +4,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 nltk.downloader.download('vader_lexicon')
 
-file = ''
+file = "/Users/deepanshusinha/git/Python/BasicPythonGame/facebook-sentiment-analysis/convertcsv.xlsx"
 
 # Read from excel
 xl = pd.ExcelFile(file)
