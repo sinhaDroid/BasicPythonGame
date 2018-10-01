@@ -25,3 +25,56 @@ and none of length 6 or greater.
 Let the input be a1, a2, …, aN. Let us define Best(i) to be the length of longest dividing sequence in a1,a2,…ai that includes ai.
 
 Write an expression for Best(i) in terms of Best(j) with j<i, with base case Best(1) = 1. Solve this recurrence using dynamic programming.
+
+## Input format
+
+The first line of input contains a single positive integer N indicating the length of the input sequence. Lines 2,…,N+1 contain one integer each. The integer on line i+1 is ai.
+
+## Output format
+
+Your output should consist of a single integer indicating the length of the longest fully dividing subsequence of the input sequence.
+
+## Test Data
+
+You may assume that N ≤ 2500.
+
+## Example
+
+Here are the inputs and outputs corresponding to the two examples discussed above.
+
+## input 1
+
+9
+2
+3
+7
+8
+14
+39
+145
+76
+320
+
+## Sample output 1
+
+3
+
+## Sample input 2
+
+14
+2
+11
+16
+12
+36
+60
+71
+17
+29
+144
+288
+129
+432
+993
+Sample output 2
+5
