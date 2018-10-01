@@ -17,4 +17,4 @@ for i in range(n):
             maxval = max(maxval, (best_stored[j])+1)
     best_stored[i] = maxval
 
-print(max(best_stored));
+print(max(best_stored))
