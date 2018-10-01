@@ -1,24 +1,20 @@
-n=input()
-ar=[]
+n = int(input())
+ar = []
 
-temp=0
-for i in range (0,n):
-    temp=input()
-    ar.append(temp)
+bestvals = []
+best_stored = []
 
-def best(i):
-    if i==0:
-        return (1)
-    else:
-        ans =1
-        for j in range (0,i):
-            if (ar[j]%ar[i]==0):
+for x in range(n):
+    ar.append(int(input()))
+    best_stored.append(0)
 
-                ans=max(ans,(best(j)+1))
-         return (ans)
-an=[]
-for i in range (0,n):
-   temp=best(i)
-   an.append(temp)
+best_stored[0] = 1
 
-print max(an)
+for i in range(n):
+    maxval = 1
+    for j in range(i):
+        if ar[i] % ar[j] == 0:
+            maxval = max(maxval, (best_stored[j])+1)
+    best_stored[i] = maxval
+
+print(max(best_stored));
