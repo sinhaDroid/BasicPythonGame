@@ -16,3 +16,9 @@ def fadedPalindrome(s):
         elif slist[i] == '.':                          # fill '.' with 'a'
             slist[i] = 'a'
     print("".join(slist))
+
+#
+# demo
+#
+fadedPalindrome('a..ba...ca')  # output: acabaabaca
+fadedPalindrome('a..ba...cb')  # output: -1 
