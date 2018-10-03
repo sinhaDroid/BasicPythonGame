@@ -16,7 +16,9 @@ def read_files(filename):
     strings = []
 
     for file in filename:
-        with open(f'./data/federalist_{file}.txt') as f:
+        print(file)
+        with open(f'federalist_{file}.txt') as f:
+            print(f)
             strings.append(f.read())
 
     return ('\n'.join(strings))
