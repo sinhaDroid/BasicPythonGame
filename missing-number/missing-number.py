@@ -7,6 +7,5 @@ def getMissingNo(A):
 
 # Driver Code
 arr = list(map(int, input().split(" ")))
-print(arr)
 
 print(getMissingNo(arr))
