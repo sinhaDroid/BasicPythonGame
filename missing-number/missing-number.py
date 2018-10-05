@@ -5,5 +5,7 @@ def getMissingNo(A):
     sum_of_A = sum(A)
     return total - sum_of_A
 
-array = int(input())
-array.split(" ")
+value = input()
+array = value.split(" ")
+
+print(getMissingNo(array))
