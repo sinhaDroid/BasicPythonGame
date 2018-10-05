@@ -3,9 +3,10 @@ def getMissingNo(A):
     n = len(A)
     total = (n+1)*(n+2)/2
     sum_of_A = sum(A)
-    return total - sum_of_A
+    return int(total - sum_of_A)
 
-value = input()
-array = value.split(" ")
+# Driver Code
+arr = list(map(int, input().split(" ")))
+print(arr)
 
-print(getMissingNo(array))
+print(getMissingNo(arr))
